@@ -36,6 +36,10 @@ class Owner
     pets[:fishes] << new_pet
   end
 
+  def play_with_cats
+    pets[:cats] = pets[:cats].map {|cat| cat.mood = "happy"}
+  end
+
   def say_species
     self.species
   end
@@ -43,4 +47,6 @@ class Owner
   def walk_dogs
     pets[:dogs] = pets[:dogs].map {|dog| dog.mood = "happy"}
   end
+
+  
 end
