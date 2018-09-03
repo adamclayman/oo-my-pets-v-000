@@ -23,17 +23,17 @@ class Owner
 
   def buy_cat(name)
     new_pet = Cat.new(name)
-    pets[:cats] << new_pet
+    self.pets[:cats] << new_pet
   end
 
   def buy_dog(name)
     new_pet = Dog.new(name)
-    pets[:dogs] << new_pet
+    self.pets[:dogs] << new_pet
   end
 
   def buy_fish(name)
     new_pet = Fish.new(name)
-    pets[:fishes] << new_pet
+    self.pets[:fishes] << new_pet
   end
 
   def feed_fish
