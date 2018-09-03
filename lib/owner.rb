@@ -15,6 +15,7 @@ class Owner
 
   def self.reset_all
     self.all = self.all.clear
+    self.all
   end
 
   def buy_cat(name)
