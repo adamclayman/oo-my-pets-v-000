@@ -13,6 +13,10 @@ class Owner
     @@owners
   end
 
+  def self.reset_all
+    self.all.clear
+  end
+
   def buy_cat(name)
     new_pet = Cat.new(name)
     pets[:cats] << new_pet
