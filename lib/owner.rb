@@ -1,8 +1,8 @@
 class Owner
-  OWNERS = []
+  :owners
 
   def initialize
-    OWNERS << self
+    @@owners << self
   end
 
   def self.all
