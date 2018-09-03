@@ -45,7 +45,7 @@ class Owner
   end
 
   def say_species
-    puts self.species
+    self.species
   end
 
   def walk_dogs
