@@ -37,7 +37,7 @@ class Owner
   end
 
   def feed_fish
-    pets[:fishes] = pets[:fishes].map {|fish| fish.mood = "happy"}
+    self.pets[:fishes] = self.pets[:fishes].map {|fish| fish.mood = "happy"}
   end
 
   def play_with_cats
