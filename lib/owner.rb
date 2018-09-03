@@ -35,4 +35,8 @@ class Owner
     new_pet = Fish.new(name)
     pets[:fishes] << new_pet
   end
+
+  def say_species
+    puts self.species
+  end
 end
