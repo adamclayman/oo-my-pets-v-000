@@ -40,6 +40,10 @@ class Owner
     self.pets[:fishes] = self.pets[:fishes].map {|fish| fish.mood = "happy"}
   end
 
+  def list_pets
+    "I have #{self.pets[:fishes].count} fish, #{self.pets[:dogs].count} dog(s), and #{self.pets[:cats].count} cat(s)."
+  end
+
   def play_with_cats
     self.pets[:cats] = self.pets[:cats].map {|cat| cat.mood = "happy"}
   end
