@@ -1,3 +1,5 @@
 class Owner
-  # code goes here
+  def initialized
+    @@owners = []
+  end
 end
