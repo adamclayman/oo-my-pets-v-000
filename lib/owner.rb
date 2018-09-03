@@ -54,7 +54,7 @@ class Owner
         pet.mood = "nervous"
       end
     end
-    self.reset_all
+    self.clear
   end
 
   def walk_dogs
