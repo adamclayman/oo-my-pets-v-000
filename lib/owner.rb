@@ -1,5 +1,11 @@
 class Owner
-  def initialized
-    @@owners = []
+  OWNERS = []
+  
+  def initialize
+    OWNERS << self
+  end
+
+  def self.reset
+    
   end
 end
