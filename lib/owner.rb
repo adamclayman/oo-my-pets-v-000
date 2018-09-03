@@ -6,7 +6,7 @@ class Owner
   end
 
   def self.all
-    OWNERS
+    @@owners
   end
 
   def self.reset
