@@ -1,15 +1,15 @@
 class Owner
-  @@owners = []
-  
+  OWNERS = []
+
   def initialize
-    @@owners << self
+    OWNERS << self
   end
 
   def self.all
-    @@owners
+    OWNERS
   end
 
   def self.reset_all
-    @@owners.clear
+    OWNERS.clear
   end
 end
