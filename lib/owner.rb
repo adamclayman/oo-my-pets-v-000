@@ -48,6 +48,14 @@ class Owner
     "I am a #{self.species}."
   end
 
+  def sell_pets
+    pets.each do |kind, pet_array|
+      pet_array.each do |pet|
+        pet.mood = "nervous"
+      end
+    end
+  end
+
   def walk_dogs
     pets[:dogs] = pets[:dogs].map {|dog| dog.mood = "happy"}
   end
