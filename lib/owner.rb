@@ -1,5 +1,4 @@
 class Owner
-  :owners
 
   def initialize
     @@owners << self
